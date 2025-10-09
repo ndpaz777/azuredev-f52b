@@ -5,7 +5,7 @@ from openai import AzureOpenAI
 
 endpoint = os.getenv("ENDPOINT_URL", "https://azaifoundrydemo.cognitiveservices.azure.com/")
 deployment = os.getenv("DEPLOYMENT_NAME", "gpt-4.1-mini")
-subscription_key = os.getenv("AZURE_OPENAI_API_KEY", "REPLACE_WITH_YOUR_KEY_VALUE_HERE")
+subscription_key = os.getenv("AZURE_OPENAI_API_KEY", "DkVMEyGKw4eIQY6uzcjagqfi4i74AD5Bf2GmoeLRf0PT8hEFWTi9JQQJ99BJACYeBjFXJ3w3AAAAACOGKEXr")
 
 # Initialize Azure OpenAI client with key-based authentication
 client = AzureOpenAI(
@@ -13,9 +13,6 @@ client = AzureOpenAI(
     api_key=subscription_key,
     api_version="2025-01-01-preview",
 )
-
-# IMAGE_PATH = "YOUR_IMAGE_PATH"
-# encoded_image = base64.b64encode(open(IMAGE_PATH, 'rb').read()).decode('ascii')
 
 # Prepare the chat prompt
 chat_prompt = [
