@@ -69,6 +69,6 @@ completion = client.chat.completions.create(
     stop=None,
     stream=False
 )
-
+# Print json format
 print(completion.to_json())
     
