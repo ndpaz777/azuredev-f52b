@@ -1,2 +1,9 @@
 openai~=1.60.2
 ansible-core~=2.17.0
+# Azure SDK dependencies used by the scripts
+azure-identity>=1.14.0
+azure-ai-projects>=1.0.0
+azure-ai-agents>=1.0.0
+azure-core>=1.26.0
+# simpleaudio was removed because it requires native build tools on Windows.
+# If you want low-latency playback, install a suitable audio backend manually.
