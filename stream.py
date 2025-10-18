@@ -26,7 +26,7 @@ def sync_main() -> None:
     # endpoint or data type can trigger 'Unsupported data type'.
     response = client.chat.completions.create(
         model=deployment,
-        messages=[{"role": "user", "content": "A,B,C,"}],
+        messages=[{"role": "user", "content": "1,2,3,"}],
         max_tokens=5,
         temperature=0,
         stream=True,
@@ -50,7 +50,7 @@ async def async_main() -> None:
     )
     response = await client.chat.completions.create(
         model=deployment,
-        messages=[{"role": "user", "content": "A,B,C,"}],
+        messages=[{"role": "user", "content": "1,2,3,"}],
         max_tokens=5,
         temperature=0,
         stream=True,
